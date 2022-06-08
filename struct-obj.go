@@ -11,6 +11,16 @@ type point struct {
 }
 
 func main() {
+
+	people := []struct {
+		Firstname string
+		Lastname  string
+	}{
+
+		{"Milind", "kulkarni"},
+		{"jon", "doe"},
+		{"jane", "doe"},
+	}
 	// Note initialized in curly braces
 	p := point{1, 3}
 	fmt.Printf("struct is %v\n", p)
@@ -22,5 +32,7 @@ func main() {
 	fmt.Printf("struct is %T\n", p)
 	// pointer represent by &
 	fmt.Printf("struct is %p\n", &p)
+
+	fmt.Println(people)
 
 }
